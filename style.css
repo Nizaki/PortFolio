@@ -103,7 +103,7 @@ body {
 }
 
 /* Mobile */
-@media screen and (max-device-width: 640px) {
+@media screen and (max-width: 640px) {
   .grid-container {
     grid-template-columns: auto;
     grid-template-rows: 80px auto auto 80px auto auto;
