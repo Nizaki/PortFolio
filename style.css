@@ -102,6 +102,46 @@ body {
   color: black;
 }
 
+/* Mobile */
+@media screen and (max-device-width: 640px) {
+  .grid-container {
+    grid-template-columns: auto;
+    grid-template-rows: 80px auto auto 80px auto auto;
+  }
+
+  .header {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+
+  .side {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+
+  .main {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+
+  .preview-title {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+
+  .preview {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+
+  .footer {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+
+  /* some CSS here */
+}
+
 /* Info */
 .fav-container {
   display: grid;
