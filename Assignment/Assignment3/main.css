@@ -1,0 +1,16 @@
+body {
+  background-color: rgb(217, 241, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+form {
+  background-color: rgb(253, 255, 230);
+  padding: 30px;
+  border-radius: 20px;
+  width: 400px;
+}
+
+#errormsg {
+  color: red;
+}

@@ -1,0 +1,23 @@
+body {
+  background-color: rgb(204, 255, 255);
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  margin: auto;
+}
+.comment {
+  min-height: 200px;
+  background-color: white;
+}
+button {
+  margin: 10px;
+  height: 40px;
+}
+#reply1 {
+  padding-left: 10px;
+}
+#reply2 {
+  padding-left: 30px;
+}

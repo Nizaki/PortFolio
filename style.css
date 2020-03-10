@@ -1,0 +1,258 @@
+:root {
+  -bgcolor: #8ae1fc;
+  -fontcolor: #2274a5;
+}
+
+body {
+  color: gray;
+  margin: 0px;
+  background-color: #8ae1fc;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 300px repeat(11, 1fr);
+  grid-template-rows: 80px auto 80px auto auto;
+}
+
+.header {
+  grid-column: span 12;
+  background-color: #8ae1fc;
+  display: flex;
+  padding-left: 10px;
+  color: #e83f6f;
+}
+
+.side {
+  grid-column: span 2;
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: larger;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.side>img {
+  max-width: 300px;
+}
+
+.main {
+  grid-column: span 10;
+  background-color: aliceblue;
+}
+
+.preview-title {
+  grid-column: span 12;
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: #8ae1fc;
+}
+
+.preview-title>a {
+  margin-left: auto;
+  color: gray;
+}
+
+.preview-title>a:visited {
+  color: gray;
+}
+
+.preview {
+  grid-column: span 12;
+  background-color: #c5f1ff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.preview>img {
+  margin: 10px;
+  max-width: 300px;
+  max-height: 300px;
+}
+
+.footer {
+  grid-column: span 12;
+  background-color: #8ae1fc;
+  font-size: 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer>span {
+  margin: 13px;
+}
+
+.fab {
+  transition: 0.3s;
+  color: gray;
+}
+
+.fab:visited {
+  color: grey;
+}
+
+.fab:hover {
+  color: black;
+}
+
+/* Info */
+.fav-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 10px;
+}
+
+.hobby {
+  grid-column: span 1;
+  padding: 10px;
+}
+
+.skill {
+  grid-column: span 1;
+}
+
+.interest {
+  grid-column: span 1;
+}
+
+/* Skill Bar */
+.skill-container {
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #ddd;
+}
+
+.skillbar {
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+}
+
+.cSharp {
+  background-color: red;
+}
+
+.s-10 {
+  width: 10%;
+}
+
+.s-20 {
+  width: 20%;
+}
+
+.s-30 {
+  width: 30%;
+}
+
+.s-40 {
+  width: 40%;
+  background-color: #2274a5;
+}
+
+.s-50 {
+  width: 50%;
+  background-color: #2274a5;
+}
+
+.s-60 {
+  width: 60%;
+  background-color: #2274a5;
+}
+
+.s-70 {
+  width: 70%;
+  background-color: #04f06a;
+}
+
+.s-80 {
+  width: 80%;
+  background-color: #04f06a;
+}
+
+/* Gallery */
+.gallery-container {
+  display: flex;
+  width: 40%;
+  margin: auto;
+  flex-wrap: wrap;
+  min-width: 700px;
+}
+
+.gallery-container>div {
+  margin: 10px;
+}
+
+.gallery-container>div:nth-child(1) {
+  background-image: url("pic/assign1.png");
+  background-size: 200%;
+  background-position-x: center;
+  background-position-y: center;
+}
+
+.gallery-container>div:nth-child(2) {
+  background-image: url("pic/assign2.png");
+  background-size: 200%;
+  background-position-x: center;
+  background-position-y: center;
+}
+
+.gallery-container>div:nth-child(3) {
+  background-image: url("pic/assign3.png");
+  background-size: 400%;
+  background-position-x: center;
+  background-position-y: center;
+}
+
+.gallery-container>div:nth-child(4) {
+  background-image: url("pic/assign4.png");
+  background-size: 400%;
+  background-position-x: center;
+  background-position-y: center;
+}
+
+.gallery-container>div:nth-child(5) {
+  background-image: url("pic/work1.png");
+  background-size: 400%;
+  background-position-x: center;
+  background-position-y: center;
+}
+
+.gallery-container>div:nth-child(6) {
+  background-image: url("pic/work2.png");
+  background-size: 100%;
+  background-position-x: center;
+  background-position-y: center;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.item>h1 {
+  text-shadow: 1px 1px black;
+}
+
+.item>h2 {
+  color: white;
+  text-shadow: 0px 0px 30px black, 0px 0px 20px black, 0px 0px 10px black;
+}
+
+/* Special FX */
+.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
+}

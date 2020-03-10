@@ -1,0 +1,37 @@
+body {
+  background-color: #fff6da;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto auto auto;
+}
+
+.header {
+  grid-column: span 12;
+  background-color: #fffcf2;
+  padding-left: 10px;
+}
+
+.ing {
+  grid-column: span 4;
+  border: 1px solid cornsilk;
+  background-color: rgb(231, 255, 254);
+}
+
+.recipe {
+  grid-column: span 8;
+  font-size: 1.6rem;
+  background-color: rgb(254, 255, 247);
+}
+
+.footer {
+  grid-column: span 12;
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer > img {
+  width: 20%;
+  height: auto;
+}
